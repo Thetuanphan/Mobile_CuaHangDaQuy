@@ -48,8 +48,8 @@ const SampleImageUrl2 = '$BaseUrl/images/defaultTheme/slider/04.jpg';
 const SampleImageUrl3 = '$BaseUrl/images/defaultTheme/slider/03.jpg';
 const SampleImageUrl4 = '$BaseUrl/images/defaultTheme/slider/05.jpg';
 const SampleProfileImageUrl =
-    'https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200';
-
+    //'https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200';
+    'https://www.w3schools.com/howto/img_avatar.png';
 const medicineShop =
     'https://image.shutterstock.com/image-vector/pharmacist-doctor-patient-drugstore-client-600w-1456880399.jpg';
 const medicineShop2 =
