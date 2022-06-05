@@ -21,6 +21,7 @@ import 'package:fast_cart/ui/screens/profile/update_profile_screen.dart';
 import 'package:fast_cart/ui/screens/user_favourite/favourite_screen.dart';
 import 'package:fast_cart/ui/screens/wallet/wallet_screen.dart';
 import 'package:fast_cart/ui/splash_screen/splash_main.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -28,7 +29,9 @@ import 'package:google_fonts/google_fonts.dart';
 import './ui/./screens/./dashboard/main_dashboard.dart';
 import 'ui/screens/liquor/varification/varification_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 

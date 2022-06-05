@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7522216153",
+    "project_id": "mobile-dq",
+    "storage_bucket": "mobile-dq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7522216153:android:c8012a8cb606b5733676c8",
+        "android_client_info": {
+          "package_name": "com.fastcart.fast_cart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7522216153-5mfnakaipa7mor49fo310gcalmfqeehf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmcWSb8I3QREGkYi3UKcs2iq45czDGAoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7522216153-5mfnakaipa7mor49fo310gcalmfqeehf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

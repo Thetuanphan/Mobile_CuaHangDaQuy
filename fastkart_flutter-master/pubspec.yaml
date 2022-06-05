@@ -25,21 +25,22 @@ dependencies:
     sdk: flutter
   carousel_slider: ^4.0.0
   google_maps_flutter: ^2.0.6
-  permission_handler: ^8.1.2
+  permission_handler: ^9.2.0
   geolocator:
-  google_fonts: ^2.1.0
+  google_fonts: ^3.0.1
   intro_slider: ^3.0.2
   after_layout: ^1.1.0
   shared_preferences: ^2.0.6
-  introduction_screen: ^2.1.0
+  introduction_screen: ^3.0.2
   page_view_indicators: ^2.0.0
-  smooth_page_indicator: ^0.2.3
+  smooth_page_indicator: ^1.0.0+2
   flutter_launcher_icons:
   expandable: ^5.0.1
 
   #state management
-  flutter_bloc: ^7.0.1
+  flutter_bloc: ^8.0.1
   equatable: ^2.0.3
+  firebase_core: ^1.17.1
 
 flutter_icons:
   android: "launcher_icon"
