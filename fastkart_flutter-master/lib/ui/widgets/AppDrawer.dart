@@ -39,7 +39,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
-                            'Hi, Chí Đại',
+                            'Hi, Jasmeen',
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: textSizeMedium,
@@ -49,7 +49,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                             height: 5,
                           ),
                           Text(
-                            '+[số điện thoại]',
+                            '+91 9876543210',
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: textSizeMedium,
