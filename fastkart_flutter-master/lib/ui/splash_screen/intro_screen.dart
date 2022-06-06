@@ -126,7 +126,7 @@ class PageViewSceens extends StatelessWidget {
         backgroundColor: Colors.transparent,
         leadingWidth: 100,
         leading: Image.asset(
-          'assets/logo.png',
+          'assets/gold logo.png',
           height: 70,
         ),
         actions: [
