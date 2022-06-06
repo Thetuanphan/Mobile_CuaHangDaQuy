@@ -30,8 +30,6 @@ import './ui/./screens/./dashboard/main_dashboard.dart';
 import 'ui/screens/liquor/varification/varification_screen.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -45,7 +43,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Vàng',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           fontFamily: GoogleFonts.poppins().fontFamily,
