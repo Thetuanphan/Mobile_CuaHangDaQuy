@@ -33,11 +33,11 @@ class _MainDashboardState extends State<MainDashboard>
   }
 
   List<String> items = [
-    'https://media.istockphoto.com/photos/hamburger-with-cheese-and-french-fries-picture-id1188412964',
-    'https://media.istockphoto.com/photos/hamburger-with-cheese-and-french-fries-picture-id1188412964',
-    'https://media.istockphoto.com/photos/hamburger-with-cheese-and-french-fries-picture-id1188412964',
-    'https://media.istockphoto.com/photos/hamburger-with-cheese-and-french-fries-picture-id1188412964',
-    'https://media.istockphoto.com/photos/hamburger-with-cheese-and-french-fries-picture-id1188412964',
+    'https://cdn.vietnammoi.vn/2020/3/26/gold-11-1-1585220672443744372122.jpg',
+    'https://cdn.vietnammoi.vn/2020/3/26/gold-11-1-1585220672443744372122.jpg',
+    'https://cdn.vietnammoi.vn/2020/3/26/gold-11-1-1585220672443744372122.jpg',
+    'https://cdn.vietnammoi.vn/2020/3/26/gold-11-1-1585220672443744372122.jpg',
+    'https://cdn.vietnammoi.vn/2020/3/26/gold-11-1-1585220672443744372122.jpg',
   ];
 
   @override
@@ -130,28 +130,29 @@ class _MainDashboardState extends State<MainDashboard>
                         Navigator.pushNamed(context, GroceryShopGrid.route);
                       },
                       child: topCategoryButton(
-                          title: 'Grocery', assets: 'assets/grocery.png'),
+                          title: 'Vàng', assets: 'assets/gold icon.png'),
                     ),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, VarificationScreeen.route);
                       },
                       child: topCategoryButton(
-                          title: 'Liquor', assets: 'assets/alcohol.png'),
+                          title: 'Bạc', assets: 'assets/silver icon.png'),
                     ),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, FastFoodGridScreen.route);
                       },
                       child: topCategoryButton(
-                          title: 'Fast Food', assets: 'assets/fastfood.png'),
+                          title: 'Đá Quý', assets: 'assets/diamond icon.png'),
+                      //fastfood
                     ),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, MedicineShopGrid.route);
                       },
                       child: topCategoryButton(
-                          title: 'Medicine', assets: 'assets/medicine.png'),
+                          title: 'Dịch Vụ Khác', assets: 'assets/medicine.png'),
                     ),
                   ],
                 ),
@@ -173,28 +174,28 @@ class _MainDashboardState extends State<MainDashboard>
                         Navigator.pushNamed(context, GroceryShopGrid.route);
                       },
                       child: topCategoryButton(
-                          title: 'BurgerKing', assets: 'assets/burgerking.png'),
+                          title: 'Chi Nhánh 1', assets: 'assets/burgerking.png'),
                     ),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, VarificationScreeen.route);
                       },
                       child: topCategoryButton(
-                          title: 'Dominos', assets: 'assets/dominos.png'),
+                          title: 'Chi Nhánh 2', assets: 'assets/dominos.png'),
                     ),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, FastFoodGridScreen.route);
                       },
                       child: topCategoryButton(
-                          title: 'BurgerKing', assets: 'assets/burgerking.png'),
+                          title: 'Chi Nhánh 3', assets: 'assets/burgerking.png'),
                     ),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, MedicineShopGrid.route);
                       },
                       child: topCategoryButton(
-                          title: 'Dominos', assets: 'assets/dominos.png'),
+                          title: 'Chi Nhánh 4', assets: 'assets/dominos.png'),
                     ),
                   ],
                 ),

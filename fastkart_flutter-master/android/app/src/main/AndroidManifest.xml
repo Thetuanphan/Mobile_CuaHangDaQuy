@@ -2,7 +2,8 @@
     package="com.fastcart.fast_cart">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="fast_cart"
+       android:name="${applicationName}"
+       android:label="fast_cart"
         android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
