@@ -32,7 +32,7 @@ class _LoginAndSignUpScreenState extends State<LoginAndSignUpScreen>
             height: SizeConfig.screenHeight * 0.3,
             decoration: BoxDecoration(
               image: DecorationImage(
-                fit: BoxFit.cover,
+                fit: BoxFit.fill,
                 image: AssetImage('assets/login top.png'),
               ),
             ),
