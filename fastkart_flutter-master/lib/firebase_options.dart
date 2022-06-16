@@ -69,8 +69,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '7522216153',
     projectId: 'mobile-dq',
     storageBucket: 'mobile-dq.appspot.com',
-    iosClientId:
-        '7522216153-0qbqs8bg7uvnuv4mgh6n7ghcm8lm2ad4.apps.googleusercontent.com',
+    iosClientId: '7522216153-0qbqs8bg7uvnuv4mgh6n7ghcm8lm2ad4.apps.googleusercontent.com',
     iosBundleId: 'com.fastcart.fastCart',
   );
 }

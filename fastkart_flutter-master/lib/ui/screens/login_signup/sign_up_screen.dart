@@ -1,10 +1,14 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fast_cart/constants/AppConstant.dart';
 import 'package:fast_cart/constants/colors_constants.dart';
+import 'package:fast_cart/ui/screens/dashboard/main_dashboard.dart';
 import 'package:fast_cart/ui/widgets/custom_button.dart';
 import 'package:fast_cart/ui/widgets/custom_text_filed.dart';
 import 'package:fast_cart/utills/SizeConfig.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 
 class SignUpScreen extends StatefulWidget {
   @override
@@ -12,6 +16,9 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
+
+  final auth = FirebaseAuth.instance;
+
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -109,9 +116,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return CustomTextField(
       showAssetIcon: true,
       borderRadius: 30,
-      hintText: 'User Name',
+      hintText: 'Email',
       iconAsset: 'assets/profile.png',
-      textInputType: TextInputType.name,
+      textInputType: TextInputType.emailAddress,
       textEditingController: userNameController,
       onChanged: (value) {
         setState(() {
@@ -189,13 +196,30 @@ class _SignUpScreenState extends State<SignUpScreen> {
   }
 
   signButton() {
-    return CustomAppButton(
-      title: 'Sign Up Now',
-      width: SizeConfig.blockSizeHorizontal * 40,
-      padding: SizeConfig.blockSizeHorizontal * 4,
-      fontSize: SizeConfig.blockSizeHorizontal * 4,
+    return TextButton(onPressed: () {
+      if (userName != null && password != null) {
+        auth.createUserWithEmailAndPassword(
+            email: userName, password: password);
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => MainDashboard()));
+      }
+      else{
+
+      }
+        },
+        child: CustomAppButton(
+          title: 'Sign Up Now',
+          width: SizeConfig.blockSizeHorizontal * 40,
+          padding: SizeConfig.blockSizeHorizontal * 4,
+          fontSize: SizeConfig.blockSizeHorizontal * 4,
+        )
     );
   }
+      // CustomAppButton(
+      // title: 'Sign Up Now',
+      // width: SizeConfig.blockSizeHorizontal * 40,
+      // padding: SizeConfig.blockSizeHorizontal * 4,
+      // fontSize: SizeConfig.blockSizeHorizontal * 4,
 
   alreadyHaveAnAccount() {
     return Row(

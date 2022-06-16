@@ -5,6 +5,7 @@ import 'package:fast_cart/ui/widgets/custom_button.dart';
 import 'package:fast_cart/ui/widgets/custom_text_filed.dart';
 import 'package:fast_cart/utills/SizeConfig.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class SignInScreen extends StatefulWidget {
   @override
@@ -12,6 +13,9 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
+
+  final auth = FirebaseAuth.instance;
+
   TextEditingController userNameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   FocusNode userNameFocusNode;
@@ -80,7 +84,7 @@ class _SignInScreenState extends State<SignInScreen> {
     return CustomTextField(
       borderRadius: 30,
       showAssetIcon: true,
-      hintText: 'User Name',
+      hintText: 'Email',
       iconAsset: 'assets/profile.png',
       textInputType: TextInputType.name,
       textEditingController: userNameController,
@@ -111,14 +115,24 @@ class _SignInScreenState extends State<SignInScreen> {
   }
 
   signButton() {
-    return CustomAppButton(
-      title: 'Sign In',
-      width: SizeConfig.blockSizeHorizontal * 40,
-      padding: SizeConfig.blockSizeHorizontal * 4,
-      fontSize: SizeConfig.blockSizeHorizontal * 4,
-      function: () {
-        Navigator.pushNamed(context, MainDashboard.route);
-      },
+    return TextButton(
+        onPressed: () {
+      if (userName != null && password != null) {
+        auth.signInWithEmailAndPassword(
+            email: userName, password: password);
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => MainDashboard()));
+      }
+      else{
+
+      }
+    },
+      child: CustomAppButton(
+        title: 'Sign In',
+        width: SizeConfig.blockSizeHorizontal * 40,
+        padding: SizeConfig.blockSizeHorizontal * 4,
+        fontSize: SizeConfig.blockSizeHorizontal * 4,
+      )
     );
   }
 
