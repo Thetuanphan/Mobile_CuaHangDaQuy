@@ -29,6 +29,13 @@
             {
               "client_id": "7522216153-5mfnakaipa7mor49fo310gcalmfqeehf.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "7522216153-0qbqs8bg7uvnuv4mgh6n7ghcm8lm2ad4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fastcart.fastCart"
+              }
             }
           ]
         }
